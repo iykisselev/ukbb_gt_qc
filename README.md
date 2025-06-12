@@ -68,7 +68,7 @@ chmod +x run_local.sh
 
 ## Configuration
 
-1. Modify the `config.yaml` file in the workflow directory by supplying paths to plink and liftOver executables, and specifying filtering criteria (MAF, missingness rate, HWE threshold).
+1. Modify the `config.yaml` file in the workflow directory by supplying paths to plink and liftOver executables, genotype and QC files, and specifying filtering criteria (MAF, missingness rate, HWE threshold).
 2. Generate a machine-specific `config.yaml` file in the profiles directory or use the provided config file for execution.
 
 ## Usage
