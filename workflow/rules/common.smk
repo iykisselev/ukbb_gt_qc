@@ -4,7 +4,7 @@ RESOURCES = {
     "liftOver": config["tools"]["liftOver"]
 }
 
-FORMATS = ["bed", "bim", "fam", "nosex"]
+FORMATS = ["bed", "bim", "fam"]
 
 # Common parameters for PLINK
 PLINK_PARAMS = {
