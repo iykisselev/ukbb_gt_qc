@@ -11,7 +11,7 @@ The workflow performs the following steps:
    - Identify and remove indels
    - Identify potential strand mismatches
    - Perform genome build liftover
-   - Apply variant-level filters (MAF, MAC, missing rate)
+   - Apply variant-level filters (MAF, MAC, missingness rate)
 3. Sample QC
    - Identify and remove outliers based on ancestry, missingness and heterozygosity
    - Filter related samples
@@ -31,7 +31,7 @@ The workflow performs the following steps:
 This file contains quality control and genotyping information ([UK Biobank Resource 1955](https://biobank.ndph.ox.ac.uk/ukb/ukb/auxdata/ukb_snp_qc.txt)) 
 
 ### Sample QC File (`ukbb_sample_qc.csv`)
-This file contains UK Biobank's quality control metrics for each sample. Required columns:
+This file should contain the UK Biobank's quality control metrics for each sample. Required columns:
 - `eid`: Sample ID
 - `p22001`: Genetic sex
 - `p31`: Reported sex
@@ -41,7 +41,7 @@ This file contains UK Biobank's quality control metrics for each sample. Require
 - `p22021`: Relatedness status
 
 ### Kinship Information File (`kinship_info.csv`)
-This file contains relatedness information from UK Biobank. Required columns:
+This should contain relatedness information from UK Biobank. Required columns:
 - `eid`: Sample ID
 - `p22011_*`: Columns containing IDs of pairs formed by related samples
 
@@ -69,7 +69,7 @@ chmod +x run_local.sh
 ## Configuration
 
 1. Modify the `config.yaml` file in the workflow directory by supplying paths to plink and liftOver executables, and specifying filtering criteria (MAF, missingness rate, HWE threshold).
-2. Generate a cluster-specific `config.yaml` file in the profiles directory or use the provided config file for local execution.
+2. Generate a machine-specific `config.yaml` file in the profiles directory or use the provided config file for execution.
 
 ## Usage
 
@@ -78,7 +78,7 @@ chmod +x run_local.sh
 ./run_local.sh
 ```
 
-2. To run with specific number of cores:
+2. To run with a specific number of cores:
 ```bash
 ./run_local.sh --cores 8
 ```
