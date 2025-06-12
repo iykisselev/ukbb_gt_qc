@@ -1,0 +1,10 @@
+# Local execution configuration
+jobs: 4
+latency-wait: 60
+keep-going: true
+
+# Resource settings for local execution
+resources:
+  mem_mb: 16000
+  time_min: 30
+  threads: 4

@@ -1,0 +1,10 @@
+Multiple includes of /home/ilya/Projects/ukbb_gt_qc/workflow/rules/common.smk ignored
+Multiple includes of /home/ilya/Projects/ukbb_gt_qc/workflow/rules/common.smk ignored
+Multiple includes of /home/ilya/Projects/ukbb_gt_qc/workflow/rules/common.smk ignored
+Multiple includes of /home/ilya/Projects/ukbb_gt_qc/workflow/rules/common.smk ignored
+Building DAG of jobs...
+MissingInputException in rule generate_zero_cluster in file /home/ilya/Projects/ukbb_gt_qc/workflow/rules/initial_qc.smk, line 3:
+Missing input files for rule generate_zero_cluster:
+    output: results/initial_qc/zero_cluster.clst
+    affected files:
+        data/raw/ukbb_gt_qc.csv

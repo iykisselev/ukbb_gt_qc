@@ -1,0 +1,21 @@
+# Common configuration
+tools:
+  plink: "path/to/plink"
+  liftOver: "/path/to/liftOver"
+
+# data paths
+gt:
+  bim: "path/to/genotypes.bim"
+  bed: "path/to/genotypes.bed"
+  fam: "path/to/genotypes.fam"
+  ukbb_qc: "path/to/ukbb_gt_qc.csv"
+samples:
+  ukbb_qc: "path/to/ukbb_samples_qc.csv"
+  kinship_info: "path/to/ukbb_kinship_info.csv"
+chain: "path/to/hg19ToHg38.over.chain"
+
+# QC parameters
+variant_qc:
+  maf_threshold: 0.01
+  missing_rate_threshold: 0.1
+  hwe_threshold: 1e-15

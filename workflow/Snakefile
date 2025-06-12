@@ -1,0 +1,15 @@
+# Load configuration
+configfile: "workflow/config.yaml"
+
+# Include all rule modules
+include: "rules/common.smk"
+include: "rules/initial_qc.smk"
+include: "rules/variant_qc.smk"
+include: "rules/sample_qc.smk"
+include: "rules/final_qc.smk"
+
+# Main target rule
+rule all:
+    input:
+        expand("results/final_qc/final_genotypes.{ext}", ext=FORMATS),
+        "results/final_qc/qc_summary.txt"
