@@ -57,7 +57,7 @@ This should contain relatedness information from UK Biobank. Required columns:
 
 1. Clone the repository:
 ```bash
-git clone <https://github.com/iykisselev/ukbb_gt_qc>
+git clone https://github.com/iykisselev/ukbb_gt_qc
 cd ukbb_gt_qc
 ```
 
@@ -102,7 +102,7 @@ results/
 │   └── gt.lifted.snv_filtered.sample_filtered.log
 └── final_qc/
     ├── qc_summary.txt
-    └── final_genotypes.{bed,bim,fam, log}
+    └── final_genotypes.{bed,bim,fam,log}
 ```
 
 Execution log files are stored in the `logs` directory, organized by QC stage.
