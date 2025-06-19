@@ -43,7 +43,7 @@ df_miss <- data.frame(
 pair_df <- rel[rel$eid %in% to_prune, ]
 pair_cols <- grep("^p22011", colnames(pair_df), value = TRUE)
 
-# Reshape pair data using base R
+# Reshape pair data
 pair_df_long <- do.call(rbind, lapply(pair_cols, function(col) {
     data.frame(
         eid = pair_df$eid,
